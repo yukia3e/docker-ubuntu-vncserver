@@ -1,0 +1,9 @@
+version: "3"
+services:
+  ubuntu-vncserver:
+    build:
+      context: ./env/
+      dockerfile: Dockerfile
+    container_name: ubuntu-vncserver
+    ports:
+      - 5901:5901
